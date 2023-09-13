@@ -1,16 +1,31 @@
-CREATE DATABASE IF NOR EXISTS companydb;
-USE companydb;
-CREATE TABLE employee (
-    id INT(11) NOT NULL AUTO_INCREMENT,
-    name VARCHAR(45) DEFAULT NULL,
-    salary INT(5) DEFAULT NULL,
+CREATE DATABASE IF NOR EXISTS Easy Facture;
+
+
+CREATE TABLE cliente (
+    id INT(10) NOT NULL AUTO_INCREMENT,
+    id_codigo INT (10) NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR(30) DEFAULT NULL,
+    apellido VARCHAR(30) DEFAULT NULL,
+    cedula INT (15) DEFAULT NULL,
+    direccion VARCHAR (60) DEFAULT NULL,
+    celular INT (15) DEFAULT NULL,
     PRIMARY KEY (id)
 );
-DESCRIBE employee;
 
-INSERT INTO employee VALUES
-(20, 'jose', 1000),
-(21, 'Maria', 1500),
-(22, 'Eduardo', 2000),
-(23, 'Yineth', 2500);
+CREATE TABLE productos (
+    id INT(10) NOT NULL AUTO_INCREMENT,
+    id_codigo INT (15) NOT NULL AUTO_INCREMENT,
+    nom_product VARCHAR (45) DEFAULT NULL,
+    precio_product INT (10) DEFAULT NULL,
+    cantidad INT (15) DEFAULT NULL,
+    PRIMARY KEY ()
+);
+
+CREATE TABLE responsable (
+    id_identificacion INT (15) NOT NULL AUTO_INCREMENT,
+    nombre VARCHAR (45) DEFAULT NULL,
+    apellido INT (10) DEFAULT NULL,
+    celular INT (15) DEFAULT NULL,
+    PRIMARY KEY ()
+);
 
