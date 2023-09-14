@@ -60,7 +60,7 @@ INSERT INTO Usuarios (NombreUsuario, CorreoElectronico, Contrasena, NivelAcceso)
 VALUES ('Usuario1', 'usuario1@example.com', 'contrasena1', 1);
 
 
-CREATE TABLE ConfiguracionEmpresa (
+CREATE TABLE Configuracion (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     NombreEmpresa VARCHAR(255),
     DireccionEmpresa VARCHAR(255),
