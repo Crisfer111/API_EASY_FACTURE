@@ -68,7 +68,7 @@ CREATE TABLE Configuracion (
     InformacionImpuestos VARCHAR(255)
 );
 
-INSERT INTO ConfiguracionEmpresa (NombreEmpresa, DireccionEmpresa, ContactoEmpresa, InformacionImpuestos)
+INSERT INTO Configuracion (NombreEmpresa, DireccionEmpresa, ContactoEmpresa, InformacionImpuestos)
 VALUES ('Mi Empresa', 'Avenida Principal, Ciudad', 'contacto@miempresa.com', 'RUC: 123456789');
 
 CREATE TABLE HistoricoFacturacion (

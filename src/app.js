@@ -7,6 +7,7 @@ import historiasfacturacionRoutes from './routes/historiafacturacion.routes.js'
 import productosRoutes from './routes/productos.routes.js'
 import usuariosRoutes from './routes/usuarios.routes.js'
 
+
 const app = express()
 
 app.use(express.json())

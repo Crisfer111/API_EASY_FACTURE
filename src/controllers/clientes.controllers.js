@@ -67,7 +67,7 @@ export const deleteCliente = async (req,res) => {
   }
 }
 
-export const updateClientes = async (req,res) => {
+export const updateCliente = async (req,res) => {
    try {
     const {id} = req.params
     const {name, salary} = req.body
