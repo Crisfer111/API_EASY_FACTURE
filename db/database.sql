@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS Easy_Facture;
+CREATE DATABASE Easy_Facture;
 
 USE Easy_Facture;
 
