@@ -6,6 +6,7 @@ export const getHistoriaFacturaciones = async (req,res) => {
         const [rows] = await pool.query('SELECT * FROM HistoriaFacturacion')
         res.json(rows)
     } catch (error) {
+      
         return res.status(500).json({
             message:'Algo va mal'
         })
