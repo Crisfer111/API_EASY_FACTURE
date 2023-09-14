@@ -1,16 +1,16 @@
 import { Router } from "express";
-import { getEmployees, createEmployees, updateEmployee, getEmployee, deleteEmployee } from "../controllers/employees.controller.js";
+import { getHistoriaFacturaciones, createHistoriaFacturaciones, updateHistoriaFacturacion, getHistoriaFacturacion, deleteHistoriaFacturacion } from "../controllers/historiafacturacion.controller.js";
 
 const router = Router()
 
-router.get('/employees',getEmployees)
+router.get('/historiaFacturacion',getHistoriaFacturaciones)
 
-router.get('/employees/:id',getEmployee)
+router.get('/historiaFacturacion/:id',getHistoriaFacturacion)
 
-router.post('./employees',createEmployees)
+router.post('./historiaFacturacion',createHistoriaFacturaciones)
 
-router.patch('/employees/:id',updateEmployee)
+router.patch('/historiaFacturacion/:id',updateHistoriaFacturacion)
 
-router.delete('/employees/:id',deleteEmployee)
+router.delete('/historiaFacturacion/:id',deleteHistoriaFacturacion)
 
 export default router

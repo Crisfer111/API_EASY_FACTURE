@@ -1,9 +1,9 @@
 import { pool } from '../db.js'
 
-export const getEmployees = async (req,res) => {
+export const getFormasPagos = async (req,res) => {
     try{
         throw new Error('Mi error')
-        const [rows] = await pool.query('SELECT * FROM employee')
+        const [rows] = await pool.query('SELECT * FROM FormasPago')
         res.json(rows)
     } catch (error) {
         return res.status(500).json({
@@ -11,9 +11,9 @@ export const getEmployees = async (req,res) => {
         })
     }
 }
-export const getEmployee = async (req, res) => {
+export const getFormasPago = async (req, res) => {
    try {
-    const [rows] = await pool.query('SELECT * FROM employee WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM FormasPago WHERE id = ?', [
         req.params.id,
     ]);
   
@@ -29,11 +29,11 @@ export const getEmployee = async (req, res) => {
    }
 };
 
-export const createEmployees =  async (req,res) => {
+export const createFormasPagos =  async (req,res) => {
    try {
     const {name, salary} = req.body
     const [rows] = await pool.query(
-        'INSERT INTO employee (name, salary) VALUES (?, ?)',
+        'INSERT INTO FormasPago (name, salary) VALUES (?, ?)',
         [name, salary]
         );
     res.send({ 
@@ -48,9 +48,9 @@ export const createEmployees =  async (req,res) => {
   }
 };
 
-export const deleteEmployee = async (req,res) => {
+export const deleteFormasPago = async (req,res) => {
    try {
-    const result = await pool.query('DELETE FROM employee WHERE id = ?',
+    const result = await pool.query('DELETE FROMFormasPago WHERE id = ?',
       [req.params.id
     ]);
     
@@ -67,13 +67,13 @@ export const deleteEmployee = async (req,res) => {
   }
 }
 
-export const updateEmployee = async (req,res) => {
+export const updateFormasPago = async (req,res) => {
    try {
     const {id} = req.params
     const {name, salary} = req.body
 
     const [result] = await pool.query(
-        'UPDATE employee SET name =  IFNULL(?, name), salary = IFNULL(?, salary) WHERE id = ?',
+        'UPDATE FormasPago SET name =  IFNULL(?, name), salary = IFNULL(?, salary) WHERE id = ?',
         [name, salary, id]
         );
 
@@ -82,7 +82,7 @@ export const updateEmployee = async (req,res) => {
         message: 'Empleado no encontrado',
     });
 
-    const [rows] = await pool.query('SELECT * FROM employee WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM FormasPago WHERE id = ?', [
         id
     ]);
     

@@ -1,9 +1,9 @@
 import { pool } from '../db.js'
 
-export const getConfiguracionempresas = async (req,res) => {
+export const getConfiguraciones = async (req,res) => {
     try{
         throw new Error('Mi error')
-        const [rows] = await pool.query('SELECT * FROM ConfiguracionEmpresa')
+        const [rows] = await pool.query('SELECT * FROM Configuracion')
         res.json(rows)
     } catch (error) {
         return res.status(500).json({
@@ -11,9 +11,9 @@ export const getConfiguracionempresas = async (req,res) => {
         })
     }
 }
-export const getConfiguracionempresa = async (req, res) => {
+export const getConfiguracion = async (req, res) => {
    try {
-    const [rows] = await pool.query('SELECT * FROM ConfiguracionEmpresa WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM Configuracion WHERE id = ?', [
         req.params.id,
     ]);
   
@@ -29,11 +29,11 @@ export const getConfiguracionempresa = async (req, res) => {
    }
 };
 
-export const createConfiguracionEmpresas =  async (req,res) => {
+export const createConfiguraciones =  async (req,res) => {
    try {
     const {name, salary} = req.body
     const [rows] = await pool.query(
-        'INSERT INTO ConfiguracionEmpresa (name, salary) VALUES (?, ?)',
+        'INSERT INTO Configuracion (name, salary) VALUES (?, ?)',
         [name, salary]
         );
     res.send({ 
@@ -48,9 +48,9 @@ export const createConfiguracionEmpresas =  async (req,res) => {
   }
 };
 
-export const deleteConfiguracionEmpresa = async (req,res) => {
+export const deleteConfiguracion = async (req,res) => {
    try {
-    const result = await pool.query('DELETE FROM ConfiguracionEmpresa WHERE id = ?',
+    const result = await pool.query('DELETE FROM Configuracion WHERE id = ?',
       [req.params.id
     ]);
     
@@ -67,13 +67,13 @@ export const deleteConfiguracionEmpresa = async (req,res) => {
   }
 }
 
-export const updateConfiguracionEmpresa = async (req,res) => {
+export const updateConfiguracion = async (req,res) => {
    try {
     const {id} = req.params
     const {name, salary} = req.body
 
     const [result] = await pool.query(
-        'UPDATE ConfiguracionEmpresa SET name =  IFNULL(?, name), salary = IFNULL(?, salary) WHERE id = ?',
+        'UPDATE Configuracion SET name =  IFNULL(?, name), salary = IFNULL(?, salary) WHERE id = ?',
         [name, salary, id]
         );
 
@@ -82,7 +82,7 @@ export const updateConfiguracionEmpresa = async (req,res) => {
         message: 'Empleado no encontrado',
     });
 
-    const [rows] = await pool.query('SELECT * FROM ConfiguracionEmpresa WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM Configuracion WHERE id = ?', [
         id
     ]);
     

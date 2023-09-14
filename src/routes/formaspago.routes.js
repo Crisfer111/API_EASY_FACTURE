@@ -1,16 +1,16 @@
 import { Router } from "express";
-import { getEmployees, createEmployees, updateEmployee, getEmployee, deleteEmployee } from "../controllers/employees.controller.js";
+import { getFormasPagos, createFormasPagos, updateFormasPago, getFormasPago, deleteFormasPago } from "../controllers/formaspago.controller.js";
 
 const router = Router()
 
-router.get('/employees',getEmployees)
+router.get('/formaspago',getFormasPagos)
 
-router.get('/employees/:id',getEmployee)
+router.get('/formasPago/:id',getFormasPago)
 
-router.post('./employees',createEmployees)
+router.post('./formasPago',createFormasPagos)
 
-router.patch('/employees/:id',updateEmployee)
+router.patch('/formasPago/:id',updateFormasPago)
 
-router.delete('/employees/:id',deleteEmployee)
+router.delete('/formasPago/:id',deleteFormasPago)
 
 export default router
