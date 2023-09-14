@@ -32,7 +32,7 @@ CREATE TABLE Facturas (
     NumeroFactura VARCHAR(20),
     FechaEmision DATE,
     FechaVencimiento DATE,
-    Estado VARCHAR(50)
+    Estado VARCHAR(50),
     Descripcion VARCHAR(100)
 );
 
