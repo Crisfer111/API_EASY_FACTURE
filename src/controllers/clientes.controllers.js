@@ -13,7 +13,7 @@ export const getClientes = async (req,res) => {
 }
 export const getCliente = async (req, res) => {
    try {
-    const [rows] = await pool.query('SELECT * FROM Clientes WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM Clientes WHERE ID = ?', [
         req.params.id,
     ]);
   
@@ -31,15 +31,17 @@ export const getCliente = async (req, res) => {
 
 export const createClientes =  async (req,res) => {
    try {
-    const {name, salary} = req.body
+    const {Nombre, Direccion, CorreoElectronico, Telefono} = req.body
     const [rows] = await pool.query(
-        'INSERT INTO Clientes (name, salary) VALUES (?, ?)',
-        [name, salary]
+        'INSERT INTO Clientes (Nombre, Direccion, CorreoElectronico, Telefono) VALUES (?, ?, ?, ?)',
+        [Nombre, Direccion, CorreoElectronico, Telefono]
         );
     res.send({ 
         id: rows.insertId,
-        name,
-        salary,
+        Nombre,
+        Direccion,
+        CorreoElectronico,
+        Telefono,
     });
   } catch (error) {
     return res.status(500).json({
@@ -50,7 +52,7 @@ export const createClientes =  async (req,res) => {
 
 export const deleteCliente = async (req,res) => {
    try {
-    const result = await pool.query('DELETE FROM Clientes WHERE id = ?',
+    const result = await pool.query('DELETE FROM Clientes WHERE ID = ?',
       [req.params.id
     ]);
     
@@ -70,11 +72,11 @@ export const deleteCliente = async (req,res) => {
 export const updateCliente = async (req,res) => {
    try {
     const {id} = req.params
-    const {name, salary} = req.body
+    const {Nombre, Direccion, CorreoElectronico, Telefono} = req.body
 
     const [result] = await pool.query(
-        'UPDATE Clientes SET name =  IFNULL(?, name), salary = IFNULL(?, salary) WHERE id = ?',
-        [name, salary, id]
+        'UPDATE Clientes SET Clientes =  IFNULL(?, Telefono), CorreoElectronico = IFNULL(?, CorreoElectronico) WHERE ID = ?',
+        [Nombre, Direccion, CorreoElectronico, Telefono]
         );
 
     if(result.affectedRows === 0)
@@ -82,7 +84,7 @@ export const updateCliente = async (req,res) => {
         message: 'Empleado no encontrado',
     });
 
-    const [rows] = await pool.query('SELECT * FROM Clientes WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM Clientes WHERE ID = ?', [
         id
     ]);
     

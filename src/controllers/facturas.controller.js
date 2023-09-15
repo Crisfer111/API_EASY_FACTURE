@@ -13,7 +13,7 @@ export const getFacturas = async (req,res) => {
 }
 export const getFactura = async (req, res) => {
    try {
-    const [rows] = await pool.query('SELECT * FROM Facturas WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM Facturas WHERE ID = ?', [
         req.params.id,
     ]);
   
@@ -33,13 +33,16 @@ export const createFacturas =  async (req,res) => {
    try {
     const {name, salary} = req.body
     const [rows] = await pool.query(
-        'INSERT INTO Facturas (name, salary) VALUES (?, ?)',
-        [name, salary]
+        'INSERT INTO Facturas (NumeroFactura, FechaEmision, FechaVencimiento, Estado, Descripcion) VALUES (?, ?, ?, ?, ?)',
+        [NumeroFactura, FechaEmision, FechaVencimiento, Estado, Descripcion]
         );
     res.send({ 
         id: rows.insertId,
-        name,
-        salary,
+        NumeroFactura,
+        FechaEmision,
+        FechaVencimiento,
+        Estado,
+        Descripcion,
     });
   } catch (error) {
     return res.status(500).json({
@@ -50,7 +53,7 @@ export const createFacturas =  async (req,res) => {
 
 export const deleteFactura = async (req,res) => {
    try {
-    const result = await pool.query('DELETE FROM Facturas WHERE id = ?',
+    const result = await pool.query('DELETE FROM Facturas WHERE ID = ?',
       [req.params.id
     ]);
     
@@ -70,11 +73,11 @@ export const deleteFactura = async (req,res) => {
 export const updateFactura = async (req,res) => {
    try {
     const {id} = req.params
-    const {name, salary} = req.body
+    const {NumeroFactura, FechaEmision, FechaVencimiento, Estado, Descripcion} = req.body
 
     const [result] = await pool.query(
-        'UPDATE Facturas SET name =  IFNULL(?, name), salary = IFNULL(?, salary) WHERE id = ?',
-        [name, salary, id]
+        'UPDATE Facturas SET Facturas =  IFNULL(?, NumeroFactura), FechaEmision = IFNULL(?, FechaEmision) WHERE ID = ?',
+        [NumeroFactura, FechaEmision, FechaVencimiento, Estado, Descripcion]
         );
 
     if(result.affectedRows === 0)
@@ -82,7 +85,7 @@ export const updateFactura = async (req,res) => {
         message: 'Empleado no encontrado',
     });
 
-    const [rows] = await pool.query('SELECT * FROM Facturas WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM Facturas WHERE ID = ?', [
         id
     ]);
     

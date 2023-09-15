@@ -13,7 +13,7 @@ export const getConfiguraciones = async (req,res) => {
 }
 export const getConfiguracion = async (req, res) => {
    try {
-    const [rows] = await pool.query('SELECT * FROM Configuracion WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM Configuracion WHERE ID = ?', [
         req.params.id,
     ]);
   
@@ -33,13 +33,15 @@ export const createConfiguraciones =  async (req,res) => {
    try {
     const {name, salary} = req.body
     const [rows] = await pool.query(
-        'INSERT INTO Configuracion (name, salary) VALUES (?, ?)',
-        [name, salary]
+        'INSERT INTO Configuracion (NombreEmpresa, DireccionEmpresa, ContactoEmpresa, InformacionImpuestos) VALUES (?, ?, ?, ?)',
+        [NombreEmpresa, DireccionEmpresa, ContactoEmpresa, InformacionImpuestos]
         );
     res.send({ 
         id: rows.insertId,
-        name,
-        salary,
+        NombreEmpresa,
+        DireccionEmpresa,
+        ContactoEmpresa,
+        InformacionImpuestos,
     });
   } catch (error) {
     return res.status(500).json({
@@ -50,7 +52,7 @@ export const createConfiguraciones =  async (req,res) => {
 
 export const deleteConfiguracion = async (req,res) => {
    try {
-    const result = await pool.query('DELETE FROM Configuracion WHERE id = ?',
+    const result = await pool.query('DELETE FROM Configuracion WHERE ID = ?',
       [req.params.id
     ]);
     
@@ -70,11 +72,11 @@ export const deleteConfiguracion = async (req,res) => {
 export const updateConfiguracion = async (req,res) => {
    try {
     const {id} = req.params
-    const {name, salary} = req.body
+    const {ContactoEmpresa, InformacionImpuestos} = req.body
 
     const [result] = await pool.query(
-        'UPDATE Configuracion SET name =  IFNULL(?, name), salary = IFNULL(?, salary) WHERE id = ?',
-        [name, salary, id]
+        'UPDATE Configuracion SET Configuracion =  IFNULL(?, ContactoEmpresa), DireccionEmpresa = IFNULL(?, DireccionEmpresa) WHERE ID = ?',
+        [NombreEmpresa, DireccionEmpresa, ContactoEmpresa, InformacionImpuestos]
         );
 
     if(result.affectedRows === 0)
@@ -82,7 +84,7 @@ export const updateConfiguracion = async (req,res) => {
         message: 'Empleado no encontrado',
     });
 
-    const [rows] = await pool.query('SELECT * FROM Configuracion WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM Configuracion WHERE ID = ?', [
         id
     ]);
     
