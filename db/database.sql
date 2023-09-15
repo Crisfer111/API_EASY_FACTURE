@@ -33,7 +33,9 @@ CREATE TABLE Facturas (
     FechaEmision DATE,
     FechaVencimiento DATE,
     Estado VARCHAR(50),
-    Descripcion VARCHAR(100)
+    Descripcion VARCHAR(100),
+    ClienteID INT, -- Esta es la columna de clave externa
+    FOREIGN KEY (ClienteID) REFERENCES Clientes(ID)
 );
 
 INSERT INTO Facturas (NumeroFactura, FechaEmision, FechaVencimiento, Estado)
@@ -75,27 +77,18 @@ CREATE TABLE HistoricoFacturacion (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     NumeroFactura VARCHAR(20),
     FechaEmision DATE,
-    ClienteID INT,
-    ProductoID INT,
+    ClienteID INT, -- Esta es la columna de clave externa para Clientes
+    ProductoID INT, -- Esta es la columna de clave externa para Productos
     Cantidad INT,
     PrecioUnitario DECIMAL(10, 2),
     Total DECIMAL(10, 2),
     Estado VARCHAR(50),
-    FechaEntrega DATE
+    FechaEntrega DATE,
+    FOREIGN KEY (ClienteID) REFERENCES Clientes(ID),
+    FOREIGN KEY (ProductoID) REFERENCES Productos(ID)
 );
 
 INSERT INTO HistoricoFacturacion (NumeroFactura, FechaEmision, ClienteID, ProductoID, Cantidad, PrecioUnitario, Total, Estado, FechaEntrega)
 VALUES ('FAC001', '2023-09-13', 1, 1, 3, 50.00, 150.00, 'Entregada', '2023-09-15');
 
 
-ALTER TABLE Facturas
-ADD COLUMN ClienteID INT,
-ADD FOREIGN KEY (ClienteID) REFERENCES Clientes(ID);
-
-ALTER TABLE DetalleFactura
-ADD COLUMN ProductoID INT,
-ADD FOREIGN KEY (ProductoID) REFERENCES Productos(ID);
-
-ALTER TABLE Auditoria
-ADD COLUMN UsuarioID INT,
-ADD FOREIGN KEY (UsuarioID) REFERENCES Usuarios(ID);
