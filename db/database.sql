@@ -77,8 +77,8 @@ CREATE TABLE HistoricoFacturacion (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     NumeroFactura VARCHAR(20),
     FechaEmision DATE,
-    ClienteID INT, -- Esta es la columna de clave externa para Clientes
-    ProductoID INT, -- Esta es la columna de clave externa para Productos
+    ClienteID INT,
+    ProductoID INT,
     Cantidad INT,
     PrecioUnitario DECIMAL(10, 2),
     Total DECIMAL(10, 2),

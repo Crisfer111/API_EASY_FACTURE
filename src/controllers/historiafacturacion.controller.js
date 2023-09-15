@@ -14,7 +14,7 @@ export const getHistoriaFacturaciones = async (req,res) => {
 }
 export const getHistoriaFacturacion = async (req, res) => {
    try {
-    const [rows] = await pool.query('SELECT * FROM HistoriaFacturacion WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM HistoriaFacturacion WHERE ID = ?', [
         req.params.id,
     ]);
   
@@ -32,15 +32,22 @@ export const getHistoriaFacturacion = async (req, res) => {
 
 export const createHistoriaFacturaciones =  async (req,res) => {
    try {
-    const {name, salary} = req.body
+    const {NumeroFactura, FechaEmision, ClienteID, ProductoID, Cantidad, PrecioUnitario, Total, Estado, FechaEntrega} = req.body
     const [rows] = await pool.query(
-        'INSERT INTO HistoriaFacturacion (name, salary) VALUES (?, ?)',
-        [name, salary]
+        'INSERT INTO HistoriaFacturacion (NumeroFactura, FechaEmision, ClienteID, ProductoID, Cantidad, PrecioUnitario, Total, Estado, FechaEntrega) VALUES (?, ?)',
+        [NumeroFactura, FechaEmision, ClienteID, ProductoID, Cantidad, PrecioUnitario, Total, Estado, FechaEntrega]
         );
     res.send({ 
         id: rows.insertId,
-        name,
-        salary,
+        NumeroFactura,
+        FechaEmision,
+        ClienteID,
+        ProductoID,
+        Cantidad, 
+        PrecioUnitario,
+        Total,
+        Estado,
+        FechaEntrega
     });
   } catch (error) {
     return res.status(500).json({
