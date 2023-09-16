@@ -31,7 +31,7 @@ export const getFactura = async (req, res) => {
 
 export const createFacturas =  async (req,res) => {
    try {
-    const {name, salary} = req.body
+    const {NumeroFactura, FechaEmision, FechaVencimiento, Estado, Descripcion} = req.body
     const [rows] = await pool.query(
         'INSERT INTO Facturas (NumeroFactura, FechaEmision, FechaVencimiento, Estado, Descripcion) VALUES (?, ?, ?, ?, ?)',
         [NumeroFactura, FechaEmision, FechaVencimiento, Estado, Descripcion]

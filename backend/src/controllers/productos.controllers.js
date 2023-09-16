@@ -13,7 +13,7 @@ export const getProductos = async (req,res) => {
 }
 export const getProducto = async (req, res) => {
    try {
-    const [rows] = await pool.query('SELECT * FROM Productos WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM Productos WHERE ID = ?', [
         req.params.id,
     ]);
   
@@ -31,15 +31,17 @@ export const getProducto = async (req, res) => {
 
 export const createProductos =  async (req,res) => {
    try {
-    const {name, salary} = req.body
+    const {Descripcion, PrecioUnitario, CodigoProducto, Categoria} = req.body
     const [rows] = await pool.query(
-        'INSERT INTO Productos (name, salary) VALUES (?, ?)',
-        [name, salary]
+        'INSERT INTO Productos (Descripcion, PrecioUnitario, CodigoProducto, Categoria) VALUES (?, ?, ?, ?)',
+        [Descripcion, PrecioUnitario, CodigoProducto, Categoria]
         );
     res.send({ 
         id: rows.insertId,
-        name,
-        salary,
+        Descripcion,
+        PrecioUnitario,
+        CodigoProducto,
+        Categoria,
     });
   } catch (error) {
     return res.status(500).json({
@@ -50,7 +52,7 @@ export const createProductos =  async (req,res) => {
 
 export const deleteProducto = async (req,res) => {
    try {
-    const result = await pool.query('DELETE FROM Productos WHERE id = ?',
+    const result = await pool.query('DELETE FROM Productos WHERE ID = ?',
       [req.params.id
     ]);
     
@@ -70,11 +72,11 @@ export const deleteProducto = async (req,res) => {
 export const updateProducto = async (req,res) => {
    try {
     const {id} = req.params
-    const {name, salary} = req.body
+    const {Descripcion, PrecioUnitario, CodigoProducto, Categoria} = req.body
 
     const [result] = await pool.query(
-        'UPDATE Productos SET name =  IFNULL(?, name), salary = IFNULL(?, salary) WHERE id = ?',
-        [name, salary, id]
+        'UPDATE Productos SET Prodcutos =  IFNULL(?, PrecioUnitario), CodigoProducto = IFNULL(?, CodigoProducto) WHERE ID = ?',
+        [Descripcion, PrecioUnitario, CodigoProducto, Categoria]
         );
 
     if(result.affectedRows === 0)
@@ -82,7 +84,7 @@ export const updateProducto = async (req,res) => {
         message: 'Empleado no encontrado',
     });
 
-    const [rows] = await pool.query('SELECT * FROM Productos WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM Productos WHERE ID = ?', [
         id
     ]);
     
