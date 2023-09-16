@@ -13,7 +13,7 @@ export const getFormasPagos = async (req,res) => {
 }
 export const getFormasPago = async (req, res) => {
    try {
-    const [rows] = await pool.query('SELECT * FROM FormasPago WHERE id = ?', [
+    const [rows] = await pool.query('SELECT * FROM FormasPago WHERE ID = ?', [
         req.params.id,
     ]);
   
@@ -33,13 +33,12 @@ export const createFormasPagos =  async (req,res) => {
    try {
     const {name, salary} = req.body
     const [rows] = await pool.query(
-        'INSERT INTO FormasPago (name, salary) VALUES (?, ?)',
-        [name, salary]
+        'INSERT INTO FormaPago (NombreFormaPago) VALUES (?,)',
+        [NombreFormaPago]
         );
     res.send({ 
         id: rows.insertId,
-        name,
-        salary,
+        NombreFormaPago,
     });
   } catch (error) {
     return res.status(500).json({
@@ -50,7 +49,7 @@ export const createFormasPagos =  async (req,res) => {
 
 export const deleteFormasPago = async (req,res) => {
    try {
-    const result = await pool.query('DELETE FROMFormasPago WHERE id = ?',
+    const result = await pool.query('DELETE FROMFormaPago WHERE ID = ?',
       [req.params.id
     ]);
     
@@ -70,11 +69,11 @@ export const deleteFormasPago = async (req,res) => {
 export const updateFormasPago = async (req,res) => {
    try {
     const {id} = req.params
-    const {name, salary} = req.body
+    const {NombreFormaPago} = req.body
 
     const [result] = await pool.query(
-        'UPDATE FormasPago SET name =  IFNULL(?, name), salary = IFNULL(?, salary) WHERE id = ?',
-        [name, salary, id]
+        'UPDATE FormaPago SET FormaPago =  IFNULL(?, Nombre), NombreFormaPago = IFNULL(?, NombreFormaPago) WHERE id = ?',
+        [NombreFormaPago]
         );
 
     if(result.affectedRows === 0)
