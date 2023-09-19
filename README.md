@@ -29,9 +29,9 @@ Repositorio de Cristina y Cristian los mejores en programacion ( ͡🔥 ͜ʖ �
 </div>
 
 <!-- Información principal -->
-# SAGA
+# Easy Facture
 
-SAGA is an educational project aimed at achieving better attendance management. It also includes a section for news and library loans.
+Loading...
 
 <!-- Stack utilizado -->
 ## Tech Stack
@@ -146,4 +146,4 @@ For production, use:
 
 [Documentación v1.9](https://docs.google.com/document/d/1w_XtKgo2KhKu8pUfnynirHXMAwRWFBMZYL8zX1rF_IE/edit?usp=sharing)
 
-Made with ❤️ and Mia Khalifa.
+( ͡🔥 ͜ʖ ͡🔥)
