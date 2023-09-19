@@ -31,7 +31,7 @@ Repositorio de Cristina y Cristian los mejores en programacion ( ͡🔥 ͜ʖ �
 <!-- Información principal -->
 # SAGA
 
-SAGA is an educational project aimed at achieving better attendance management. It also includes a section for news and library loans.
+EASY_FACTURE is a billing project aimed at a company to achieve better management of its sellers and customers of its products.
 
 <!-- Stack utilizado -->
 ## Tech Stack
@@ -139,11 +139,10 @@ For production, use:
 
 ## 👨‍🏫Leaders Instructors
 - [@hdtoledo](https://github.com/hdtoledo)
-- [@jlombanar](https://github.com/jlombanar)
 
 <!-- Documentación oficial -->
 ## Official Documentation
 
-[Documentación v1.9](https://docs.google.com/document/d/1w_XtKgo2KhKu8pUfnynirHXMAwRWFBMZYL8zX1rF_IE/edit?usp=sharing)
+[Documentación ]()
 
-Made with ❤️ and Mia Khalifa.
+Made with ❤️ and CR7
