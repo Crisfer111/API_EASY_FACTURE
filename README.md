@@ -135,11 +135,10 @@ For production, use:
 ## 👨‍💻Authors
 
 - [@Crisfer111](https://github.com/Crisfer111)
-- [@CristinaSrng](hhttps://github.com/CristinaStng)
+- [@CristinaSrng](https://github.com/CristinaStng)
 
 ## 👨‍🏫Leaders Instructors
 - [@hdtoledo](https://github.com/hdtoledo)
-- [@jlombanar](https://github.com/jlombanar)
 
 <!-- Documentación oficial -->
 ## Official Documentation
