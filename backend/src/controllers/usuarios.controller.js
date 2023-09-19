@@ -2,7 +2,6 @@ import { pool } from '../db.js'
 
 export const getUsuarios = async (req,res) => {
     try{
-        throw new Error('Mi error')
         const [rows] = await pool.query('SELECT * FROM Usuarios')
         res.json(rows)
     } catch (error) {
