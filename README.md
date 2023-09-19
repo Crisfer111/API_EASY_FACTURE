@@ -134,17 +134,16 @@ For production, use:
 <!-- Autores del proyecto -->
 ## 👨‍💻Authors
 
-- 
-- 
-- 
+- [@Crisfer111](https://github.com/Crisfer111)
+- [@CristinaSrng](hhttps://github.com/CristinaStng)
 
 ## 👨‍🏫Leaders Instructors
-- 
-- 
+- [@hdtoledo](https://github.com/hdtoledo)
+- [@jlombanar](https://github.com/jlombanar)
 
 <!-- Documentación oficial -->
 ## Official Documentation
 
 [Documentación v1.9](https://docs.google.com/document/d/1w_XtKgo2KhKu8pUfnynirHXMAwRWFBMZYL8zX1rF_IE/edit?usp=sharing)
 
-Made with ❤️ and JavaScript.
+Made with ❤️ and Mia Khalifa.
