@@ -135,7 +135,7 @@ For production, use:
 ## 👨‍💻Authors
 
 - [@Crisfer111](https://github.com/Crisfer111)
-- [@CristinaSrng](hhttps://github.com/CristinaStng)
+- [@CristinaSgtng](hhttps://github.com/CristinaStng)
 
 ## 👨‍🏫Leaders Instructors
 - [@hdtoledo](https://github.com/hdtoledo)

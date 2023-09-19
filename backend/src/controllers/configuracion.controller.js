@@ -2,7 +2,6 @@ import { pool } from '../db.js'
 
 export const getConfiguraciones = async (req,res) => {
     try{
-        throw new Error('Mi error')
         const [rows] = await pool.query('SELECT * FROM Configuracion')
         res.json(rows)
     } catch (error) {
