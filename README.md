@@ -31,8 +31,7 @@ Repositorio de Cristina y Cristian los mejores en programacion ( ͡🔥 ͜ʖ �
 <!-- Información principal -->
 # Easy Facture
 
-Easy_Facture is an educational project aimed at achieving better attendance management. It also includes a section for news and library loans.
-
+EASY_FACTURE is a billing project aimed at a company to achieve better management of its sellers and customers of its products.
 <!-- Stack utilizado -->
 ## Tech Stack
 
