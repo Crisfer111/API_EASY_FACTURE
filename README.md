@@ -8,7 +8,7 @@ Repositorio de Cristina y Cristian los mejores en programacion ( ͡🔥 ͜ʖ �
 </div>
 <br>
 <div align="center">
-	<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=400&color=3BAA35&background=FFFFFF00&center=true&vCenter=true&width=435&lines=Welcome+to+SAGA;A+Node.js+and+React.js+project" alt="Typing SVG SAGA"/>
+	<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=400&color=3BAA35&background=FFFFFF00&center=true&vCenter=true&width=435&lines=Welcome+to+EasyFacture;A+Node.js+and+React.js+project" alt="Typing SVG SAGA"/>
 </div>
 <br>
 <div align="center">
@@ -49,7 +49,6 @@ SAGA is an educational project aimed at achieving better attendance management. 
 
 ## Deployment
 
-![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 <p>
@@ -77,7 +76,7 @@ SAGA is an educational project aimed at achieving better attendance management. 
 </p>
 
 ```bash
-  yarn dev
+  VS dev
 ```
 
 <div align="center">
@@ -91,7 +90,7 @@ SAGA is an educational project aimed at achieving better attendance management. 
   For production, use:</p>
 
 ```bash
-  yarn star
+  VS star
 ```
 ---
 ### 💻Front-end
@@ -135,17 +134,17 @@ For production, use:
 <!-- Autores del proyecto -->
 ## 👨‍💻Authors
 
-- [@JuanDiego-Arenas](https://juandiego-arenas.github.io/portfolio/)
-- [@JuanferGG](https://github.com/JuanferGG)
-- [@XH0PE](https://github.com/XH0PE)
+- 
+- 
+- 
 
 ## 👨‍🏫Leaders Instructors
-- [@hdtoledo](https://github.com/hdtoledo)
-- [@jlombanar](https://github.com/jlombanar)
+- 
+- 
 
 <!-- Documentación oficial -->
 ## Official Documentation
 
-[Documentación v1.9](https://docs.google.com/document/d/1kZ9EadnyI-J2SxvlJGsE3FNvKyZrG7BQ/edit?usp=sharing&ouid=103677181091693336183&rtpof=true&sd=true)
+[Documentación v1.9](https://docs.google.com/document/d/1w_XtKgo2KhKu8pUfnynirHXMAwRWFBMZYL8zX1rF_IE/edit?usp=sharing)
 
 Made with ❤️ and JavaScript.
