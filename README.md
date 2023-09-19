@@ -8,7 +8,7 @@ Repositorio de Cristina y Cristian los mejores en programacion ( ͡🔥 ͜ʖ �
 </div>
 <br>
 <div align="center">
-	<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=400&color=3BAA35&background=FFFFFF00&center=true&vCenter=true&width=435&lines=Welcome+to+EasyFacture;A+Node.js+and+React.js+project" alt="Typing SVG EASY_FACTURE"/>
+	<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=400&color=3BAA35&background=FFFFFF00&center=true&vCenter=true&width=435&lines=Welcome+to+EasyFacture;A+Node.js+and+React.js+project" alt="Typing SVG SAGA"/>
 </div>
 <br>
 <div align="center">
@@ -31,11 +31,7 @@ Repositorio de Cristina y Cristian los mejores en programacion ( ͡🔥 ͜ʖ �
 <!-- Información principal -->
 # Easy Facture
 
-<<<<<<< HEAD
-Loading...
-=======
-EASY_FACTURE is a billing project aimed at a company to achieve better management of its sellers and customers of its products.
->>>>>>> cfee2c772fa4428465e43531b56986e8bc3a915a
+Easy_Facture is an educational project aimed at achieving better attendance management. It also includes a section for news and library loans.
 
 <!-- Stack utilizado -->
 ## Tech Stack
@@ -139,18 +135,15 @@ For production, use:
 ## 👨‍💻Authors
 
 - [@Crisfer111](https://github.com/Crisfer111)
-- [@CristinaStng](https://github.com/CristinaStng)
+- [@CristinaSrng](hhttps://github.com/CristinaStng)
 
 ## 👨‍🏫Leaders Instructors
 - [@hdtoledo](https://github.com/hdtoledo)
+- [@jlombanar](https://github.com/jlombanar)
 
 <!-- Documentación oficial -->
 ## Official Documentation
 
-[Documentación ]()
+[Documentación v1.9](https://docs.google.com/document/d/1w_XtKgo2KhKu8pUfnynirHXMAwRWFBMZYL8zX1rF_IE/edit?usp=sharing)
 
-<<<<<<< HEAD
-( ͡🔥 ͜ʖ ͡🔥)
-=======
-Made with ❤️ and CR7
->>>>>>> cfee2c772fa4428465e43531b56986e8bc3a915a
+(͠≖ ͜ʖ͠≖)👌
