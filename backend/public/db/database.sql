@@ -1,6 +1,6 @@
-CREATE DATABASE Easy_Facture;
+CREATE DATABASE easy_facture;
 
-USE Easy_Facture;
+USE easy_facture;
 
 CREATE TABLE Clientes (
     ID INT AUTO_INCREMENT PRIMARY KEY,
@@ -44,7 +44,6 @@ VALUES ('FAC001', '2023-09-13', '2023-09-30', 'Pendiente');
 CREATE TABLE FormasPago (
     ID INT AUTO_INCREMENT PRIMARY KEY,
     NombreFormaPago VARCHAR(50)
-    
 );
 
 INSERT INTO FormasPago (NombreFormaPago)
