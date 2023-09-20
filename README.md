@@ -12,12 +12,9 @@ API Principal de Easy_Facture...
 </div>
 <br>
 <div align="center">
-<p align="center"> <img height="24px" src="https://komarev.com/ghpvc/?username=xh0pe&label=Users&color=1abc58&style=flat" alt="Counter" /> </p>
-
-</p>
 
   ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-  ![Visual Studio Code](https://img.shields.io/visual-studio-marketplace/stars/:extensionId)
+  
 </div>
 
 <!-- Información principal -->
