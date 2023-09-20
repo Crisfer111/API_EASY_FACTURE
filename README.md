@@ -20,7 +20,7 @@ API Principal de Easy_Facture...
 <!-- Información principal -->
 # Easy Facture
 
-Easy_Facture is an educational project aimed at achieving better attendance management. It also includes a section for news and library loans.
+This is a billing project aimed at a local company called 'Distribuciones Jr.' This company deals with the first-hand trading of products in stores, offering a variety of items such as cleaning supplies, kitchenware, groceries, sweets, and more.
 
 <!-- Stack utilizado -->
 ## Tech Stack
@@ -41,7 +41,7 @@ Easy_Facture is an educational project aimed at achieving better attendance mana
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 <p>
-  In this project, it is possible that we will use (NPM) for the complete development of the API.
+  We will use part of Visual Studio Code and for the server we will work with NPM
 </p>
 
 <div align="center">
