@@ -4,7 +4,7 @@ API Principal de Easy_Facture...
 <!-- Banner SAGA -->
 <div align="center">
 	<img height="200px" src="public/img/Sena.png" alt="Logo SENA"/>
-  <img height="200px" src="public/img/easyfacture.png" alt="Logo JR"/>
+  <img height="200px" src="public/img/logo_ef copia.png" alt="Logo JR"/>
 </div>
 <br>
 <div align="center">
