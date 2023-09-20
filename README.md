@@ -11,8 +11,13 @@ API Principal de Easy_Facture...
 	<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=400&color=000000&background=FFFFFF00&center=true&vCenter=true&width=435&lines=Bienvenido+a+EasyFacture;A+Node.js+and+Nodemon" alt="Typing SVG SAGA"/>
 </div>
 <br>
+<div align="center">
+<p align="center"> <img height="24px" src="https://komarev.com/ghpvc/?username=xh0pe&label=Users&color=1abc58&style=flat" alt="Counter" /> </p>
+
+</p>
+
   ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-  ![VisualStudioCode](https://img.shields.io/visual-studio-marketplace/stars/:extensionId)
+  ![Visual Studio Code](https://img.shields.io/visual-studio-marketplace/stars/:extensionId)
 </div>
 
 <!-- Información principal -->
