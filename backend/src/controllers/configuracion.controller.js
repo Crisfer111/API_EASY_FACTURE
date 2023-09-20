@@ -18,7 +18,7 @@ export const getConfiguracion = async (req, res) => {
   
     if (rows.length <= 0) 
       return res.status(404).json({
-        mesage: 'Empleado no encontrado',
+        mesage: 'No se encuentra la configuracion',
       });
     res.json(rows[0]);
   } catch (error) {
@@ -57,7 +57,7 @@ export const deleteConfiguracion = async (req,res) => {
     
     if(result.affectedRows <= 0)
       return res.status(404).json({
-        message: 'Empleado no encontrado'
+        message: 'No se encuentra la configuracion'
     });
 
     res.sendStatus(204);
@@ -80,7 +80,7 @@ export const updateConfiguracion = async (req,res) => {
 
     if(result.affectedRows === 0)
     return res.status(404).json({
-        message: 'Empleado no encontrado',
+        message: 'No se encuentra la configuracion',
     });
 
     const [rows] = await pool.query('SELECT * FROM Configuracion WHERE ID = ?', [

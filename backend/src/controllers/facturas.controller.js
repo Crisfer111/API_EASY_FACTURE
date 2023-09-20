@@ -18,7 +18,7 @@ export const getFactura = async (req, res) => {
   
     if (rows.length <= 0) 
       return res.status(404).json({
-        mesage: 'Facturas no encontrado',
+        mesage: 'Facturas no encontradas',
       });
     res.json(rows[0]);
   } catch (error) {
@@ -81,7 +81,7 @@ export const updateFactura = async (req,res) => {
 
     if(result.affectedRows === 0)
     return res.status(404).json({
-        message: 'Facturas no encontrado',
+        message: 'Facturas no encontradas',
     });
 
     const [rows] = await pool.query('SELECT * FROM Facturas WHERE ID = ?', [

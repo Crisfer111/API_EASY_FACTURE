@@ -54,7 +54,7 @@ This is a billing project aimed at a local company called 'Distribuciones Jr.' T
 ## 👨‍💻Authors
 
 - [@Crisfer111](https://github.com/Crisfer111)
-- [@CristinaSrng](https://github.com/CristinaStng)
+- [@CristinaStng](https://github.com/CristinaStng)
 
 ## 👨‍🏫Leaders Instructors
 - [@hdtoledo](https://github.com/hdtoledo)
