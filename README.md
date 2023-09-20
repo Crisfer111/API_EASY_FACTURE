@@ -8,13 +8,13 @@ API Principal de Easy_Facture...
 </div>
 <br>
 <div align="center">
-	<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=400&color=000000&background=FFFFFF00&center=true&vCenter=true&width=435&lines=Bienvenido+a+EasyFacture;A+Node.js+and+Nodemon" alt="Typing SVG SAGA"/>
+	<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=5000&pause=400&color=000000&background=FFFFFF00&center=true&vCenter=true&width=435&lines=Bienvenido+a+EasyFacture;A+Node.js+and+Nodemon" alt="Typing SVG SAGA"/>
 </div>
 <br>
 <div align="center">
 
   ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-  
+
 </div>
 
 <!-- Información principal -->
@@ -49,52 +49,6 @@ Easy_Facture is an educational project aimed at achieving better attendance mana
 </div>
 
 <br>
-
-**Production**
-<p>
-  For production, use:</p>
-
-```bash
-  VS star
-```
----
-### 💻Front-end
-<p>
-  To run the front-end view, navigate to the root directory of the <a href="./frontend/">frontend</a> 
-</p>
-
-<p>
-  While here, install the Yarn/npm dependencies, and we utilize Vite<a href="https://vitejs.dev/"> here.</a>
-</p>
-
-```bash
-  npm install
-```
-<br>
-
-**Development**
-<p>
-  If you are using it in a development environment, use:
-</p>
-
-```bash
-  npm run dev
-```
-<div align="center">
-	<img src="./public/img/frontend_dev.png" alt="Backend running"/>
-</div>
-
-<br>
-
-**Production**
-<p>
-For production, use:
-</p>
-
-```bash
-  npm run deploy
-```
-
 
 <!-- Autores del proyecto -->
 ## 👨‍💻Authors
