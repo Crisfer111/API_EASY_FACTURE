@@ -1,5 +1,5 @@
 # API_EASY_FACTURE
-Repositorio de Cristina y Cristian los mejores en programacion ( ͡🔥 ͜ʖ ͡🔥) (👍 ͡❛ 👅 ͡❛)👍
+API Principal de Easy_Facture...
 
 <!-- Banner SAGA -->
 <div align="center">
@@ -8,7 +8,7 @@ Repositorio de Cristina y Cristian los mejores en programacion ( ͡🔥 ͜ʖ �
 </div>
 <br>
 <div align="center">
-	<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=400&color=3BAA35&background=FFFFFF00&center=true&vCenter=true&width=435&lines=Welcome+to+EasyFacture;A+Node.js+and+React.js+project" alt="Typing SVG SAGA"/>
+	<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&duration=3000&pause=400&color=000000&background=FFFFFF00&center=true&vCenter=true&width=435&lines=Bienvenido+a+EasyFacture;A+Node.js+and+Nodemon" alt="Typing SVG SAGA"/>
 </div>
 <br>
 <div align="center">
@@ -25,13 +25,14 @@ Repositorio de Cristina y Cristian los mejores en programacion ( ͡🔥 ͜ʖ �
 </p>
 
   ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
-  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+  ![Visual Studio Code](https://img.shields.io/visual-studio-marketplace/stars/:extensionId)
 </div>
 
 <!-- Información principal -->
 # Easy Facture
 
-EASY_FACTURE is a billing project aimed at a company to achieve better management of its sellers and customers of its products.
+Easy_Facture is an educational project aimed at achieving better attendance management. It also includes a section for news and library loans.
+
 <!-- Stack utilizado -->
 ## Tech Stack
 
@@ -51,32 +52,8 @@ EASY_FACTURE is a billing project aimed at a company to achieve better managemen
 ![NPM](https://img.shields.io/badge/NPM-%23000000.svg?style=for-the-badge&logo=npm&logoColor=white)
 
 <p>
-  In this project, it is possible to use Yarn as an alternative to npm.
+  In this project, it is possible that we will use (NPM) for the complete development of the API.
 </p>
-
-### 🐱‍💻Back-end
-<p>
-  To run the server, start by navigating to the root directory of the <a href="./backend/">backend</a> 
-</p>
-
-<p>
-  Once here, install the Yarn/npm dependencies.
-</p>
-
-```bash
-  yarn install
-```
-<br>
-
-**Development**
-<p>
-  If you are using it in a development environment, use:
-
-</p>
-
-```bash
-  VS dev
-```
 
 <div align="center">
 	<img src="./public/img/backend_dev.png" alt="Backend running"/>
@@ -142,6 +119,6 @@ For production, use:
 <!-- Documentación oficial -->
 ## Official Documentation
 
-[Documentación v1.9](https://docs.google.com/document/d/1w_XtKgo2KhKu8pUfnynirHXMAwRWFBMZYL8zX1rF_IE/edit?usp=sharing)
+[Documentación](https://docs.google.com/document/d/1w_XtKgo2KhKu8pUfnynirHXMAwRWFBMZYL8zX1rF_IE/edit?usp=sharing)
 
 (͠≖ ͜ʖ͠≖)👌
